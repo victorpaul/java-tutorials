@@ -8,6 +8,7 @@ public class NumberPrimitive {
         //create new variable x
         int x;
 
+
         //assign new value to valiable 'x'
         x = 1999888777;
 

@@ -11,7 +11,7 @@ public class Validator {
 
         boolean isValidation = true;
 
-        if(firstName.length() < 2 || firstName.length() == 0){
+        if(firstName.length() < 2 || firstName.trim().isEmpty() == true){
             isValidation = false;
             errorMessage =  errorMessage + " Firstname is invalid";
         }
@@ -27,8 +27,8 @@ public class Validator {
             System.out.println("There are some errors: " + errorMessage);
         }
 
-        //firstName.isEmpty();
-        //firstName.trim();
+        //String firstName.isEmpty();
+        //String firstName.trim();
 
     }
 }

@@ -4,19 +4,21 @@
 public class StringExample {
 
     public static void main(String[] args){
-        runStringSample();
+        //runStringSample();
 
-        //runloopSample();
+        runloopSample();
 
         //runArraySample();
     }
 
     public static void runStringSample(){
+        int x;
+
         String nameNull = null;
         String name1 = " Carl ";
         String name2 = new String(" Bob ");
 
-        char[] name3Array = { 'S', 'a', 'r', 'a', 'h'};
+        char[] name3Array = { 'S','a','r','a','h'};
         String name3 = new String(name3Array);
 
 
@@ -28,20 +30,27 @@ public class StringExample {
 
         if(name3 != null && name3.isEmpty() == false) {
             String sarahConnor = name3 + " Connor ";
+
+
+            System.out.println(sarahConnor.length()); // 13
+
             sarahConnor = sarahConnor.trim();
+
             System.out.println(sarahConnor); // Sarah Connor
             System.out.println(sarahConnor.length()); // 12
         }
 
         if(name1 != null && name1.isEmpty() == false) {
+
             String karlMarks = name1.concat(" Marks ");
+
             System.out.println(karlMarks); // Carl Marks
             System.out.println(karlMarks.length()); // 10
         }
 
 
 
-        if(name1.equals(name2)){
+        if(name2.equals(name1) ){
             System.out.println("name1 == name2");
         }
 
@@ -56,7 +65,9 @@ public class StringExample {
         System.out.println("loop for");
 
 
-        for(int i=0;i<hello.length();i++){// i == 0,1,2,3,4,5,6,7,8,9,10
+
+        for( int i=0; i<=10; i = i+1){
+            // i == 0,1,2,3,4,5,6,7,8,9,10
             System.out.print(hello.charAt(i));
         }
 
@@ -66,9 +77,11 @@ public class StringExample {
 
 
         int i = 0; // create new i ????? WTF?
+
         while(i<hello.length()){ // danger loop
+
             System.out.print(hello.charAt(i));
-            i++;
+            i=i+1;
         }
 
 
@@ -98,6 +111,8 @@ public class StringExample {
         if(amountOfLettersToMove > nameArray.length){
             amountOfLettersToMove = nameArray.length;
         }
+
+
         for(int i=0;i<amountOfLettersToMove;i++){
             nameArray[i] = hello.charAt(i);
             System.out.println("nameArray[" + i + "]=" + nameArray[i]);

@@ -1,8 +1,10 @@
+package tutorial0;
+
 /**
  * Created by victor on 01.08.16.
  */
 public class Validator {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         String firstName = "Va";
         String lastName = "Va";
@@ -11,19 +13,19 @@ public class Validator {
 
         boolean isValidation = true;
 
-        if(firstName.length() < 2 || firstName.trim().isEmpty() == true){
+        if (firstName.length() < 2 || firstName.trim().isEmpty() == true) {
             isValidation = false;
-            errorMessage =  errorMessage + " Firstname is invalid";
+            errorMessage = errorMessage + " Firstname is invalid";
         }
 
-        if(lastName.length() < 2 || lastName.length() == 0){
+        if (lastName.length() < 2 || lastName.length() == 0) {
             isValidation = false;
-            errorMessage =  errorMessage + " Lastname is invalid";
+            errorMessage = errorMessage + " Lastname is invalid";
         }
 
-        if(isValidation){
+        if (isValidation) {
             System.out.println("Success");
-        }else{
+        } else {
             System.out.println("There are some errors: " + errorMessage);
         }
 

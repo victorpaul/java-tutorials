@@ -1,3 +1,5 @@
+package tutorial0;
+
 /**
  * Created by victor on 01.08.16.
  */
